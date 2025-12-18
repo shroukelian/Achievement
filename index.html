@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أبو عزيزة | لتنسيق الحدائق والديكور الخارجي</title>
+    <title>إنجاز | لتنسيق الحدائق والديكور الخارجي</title>
 
     <!-- خطوط عربية (Cairo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,33 +25,34 @@
     <!-- Header / Navbar -->
     <nav class="navbar">
         <div class="container">
-            <!-- 1. اللوجو واسم الشركة -->
+            <!-- اللوجو واسم المؤسسة -->
             <a href="#" class="logo">
-                <img src="images/logo-removebg-preview (3).png" alt="Abo Aziza Logo">
-                <span>مؤسسة أبو عزيزة</span>
+                <img src="images/WhatsApp_Image_2025-12-18_at_2.34.05_PM-removebg-preview.png" alt="Abo Aziza Logo">
+                <span>مؤسسة إنجاز</span>
             </a>
 
-            <!-- 2. الروابط (بتختفي في الموبايل) -->
+            <!-- روابط التنقل (مربوطة بـ ID كل سكشن) -->
             <ul class="nav-links">
                 <li><a href="#home">الرئيسية</a></li>
                 <li><a href="#about">من نحن</a></li>
                 <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#gallery">أعمالنا</a></li>
+                <li><a href="#process">كيف نعمل</a></li> <!-- قسم خطوات العمل -->
+                <li><a href="#gallery-video">أعمالنا </a></li> <!-- قسم اليوتيوب -->
+                <li><a href="#reviews">آراء العملاء</a></li> <!-- قسم التقييمات -->
                 <li><a href="#contact" class="btn-nav">اتصل بنا</a></li>
             </ul>
 
-            <!-- 3. زر القائمة (بيظهر في الموبايل) -->
+            <!-- زر القائمة للموبايل -->
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <header id="home" class="hero">
         <div class="overlay"></div>
         <div class="container hero-content">
-            <h1 data-aos="fade-down" data-aos-duration="1000">أبو عزيزة لتنسيق الحدائق</h1>
+            <h1 data-aos="fade-down" data-aos-duration="1000">إنجاز لتنسيق الحدائق</h1>
             <h2 data-aos="fade-up" data-aos-delay="200">نحول خيالك إلى واقع أخضر</h2>
             <p data-aos="fade-up" data-aos-delay="400">
                 متخصصون في التصميم الخارجي والمناظر الطبيعية لتقديم رؤية جديدة ومختلفة في عالم الديكور.
@@ -69,12 +70,12 @@
         <div class="container about-grid">
             <div class="about-img" data-aos="fade-left">
                 <!-- صورة تعبر عن تنسيق الحدائق -->
-                <img src="images/حديقه.jpeg" alt="تنسيق حدائق">
+                <img src="images/about.jpeg" alt="تنسيق حدائق">
             </div>
             <div class="about-text" data-aos="fade-right">
                 <h3>من نحن</h3>
                 <h2>رؤية جديدة في عالم الديكور والتصميم</h2>
-                <p>نحن مؤسسة "أبو عزيزة"، متخصصون في تقديم أرقى خدمات اللاندسكيب والتصميم الخارجي في الرياض والمملكة.
+                <p>نحن مؤسسة "إنجاز"، متخصصون في تقديم أرقى خدمات اللاندسكيب والتصميم الخارجي في الرياض والمملكة.
                     نتميز بتقديم رؤية مختلفة تجمع بين الجمال الطبيعي والتصميم الحديث.</p>
                 <ul class="features-list">
                     <li><i class="fas fa-check-circle"></i> تصميم وتنفيذ وإشراف هندسي.</li>
@@ -136,41 +137,143 @@
         </div>
     </section>
 
-    <!-- Video Gallery Section (Reels Style) -->
-    <section id="videos" class="section-padding">
+
+    <!-- Video Gallery Section -->
+    <section id="gallery-video" class="section-padding">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h3>شاهد أعمالنا</h3>
-                <h2>فيديوهات من أرض الواقع</h2>
+                <h3>شاهد على أرض الواقع</h3>
+                <h2>جولة في مشاريعنا</h2>
                 <div class="line"></div>
             </div>
 
-            <div class="video-grid">
-                <!-- فيديو 1 -->
-                <div class="video-item" data-aos="zoom-in">
-                    <!-- استبدل src برابط الفيديو الخاص بك -->
-                    <video controls poster="images/ChatGPT Image 18 ديسمبر 2025، 12_56_50 م.png">
-                        <source src="images/vido1.mp4" type="video/mp4">
-                        متصفحك لا يدعم الفيديو.
-                    </video>
+            <div class="video-grid-youtube">
+
+                <!-- Video 1 -->
+                <div class="video-card" data-aos="zoom-in">
+                    <div class="video-wrapper">
+                        <!-- استبدلي الرابط ده برابط الـ Embed من يوتيوب -->
+                        <iframe src="https://www.youtube.com/embed/FRgCfGI6WsI" title="YouTube video" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
-                <!-- فيديو 2 -->
-                <div class="video-item" data-aos="zoom-in" data-aos-delay="200">
-                    <video controls poster="images/حديقه.jpeg">
-                        <source src="images/vido2.mp4" type="video/mp4">
-                    </video>
+
+                <!-- Video 2 -->
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/sV0lH0fdhS4" title="YouTube video" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
-                <!-- فيديو 3 -->
-                <div class="video-item" data-aos="zoom-in" data-aos-delay="400">
-                    <video controls poster="images/جلسان.jpeg">
-                        <source src="images/vido3.mp4" type="video/mp4">
-                    </video>
+
+                <!-- Video 3 -->
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/kOeaXYDQTqs" title="YouTube video" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/O1STtWh6pao" title="YouTube video" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/b3QWYbGOT38" title="YouTube video" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/8PKmek7LdRg" title="YouTube video" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="video-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/3MMuKhPUC7w" title="YouTube video" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                  <div class="video-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/30b1BaZWcQI" title="YouTube video" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section-padding bg-light" id="process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h3>خطوات العمل</h3>
+                <h2>رحلتك معنا من التصميم للتنفيذ</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="process-grid">
+                <!-- Step 1 -->
+                <div class="process-step" data-aos="fade-up">
+                    <div class="step-icon">1</div>
+                    <h4>المعاينة والقياس</h4>
+                    <p>نزورك للموقع لرفع المقاسات ومناقشة أفكارك.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-icon">2</div>
+                    <h4>التصميم 3D</h4>
+                    <p>نصمم لك الحديقة ثلاثية الأبعاد لترى النتيجة قبل التنفيذ.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-icon">3</div>
+                    <h4>التنفيذ والتركيب</h4>
+                    <p>فريق محترف يقوم بتركيب العشب، الشلالات، والمظلات.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-icon">4</div>
+                    <h4>التسليم والضمان</h4>
+                    <p>نسلمك الحديقة جاهزة مع ضمان على جودة الأعمال.</p>
                 </div>
             </div>
-            <div class="text-center mt-20">
-                <a href="https://www.instagram.com/reel/DSSyKJ-iGNH/" target="_blank" class="btn instagram-btn">
-                    <i class="fab fa-instagram"></i> شاهد المزيد على انستجرام
-                </a>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section-padding" id="reviews">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>قالوا عنا</h2>
+                <div class="line"></div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card" data-aos="flip-right">
+                    <i class="fas fa-quote-right"></i>
+                    <p>"شغل ممتاز وسرعة في التنفيذ، حولوا الحوش عندي لجنة. شكراً إنجاز."</p>
+                    <h4>أبو خالد - الرياض</h4>
+                </div>
+                <div class="review-card" data-aos="flip-right" data-aos-delay="100">
+                    <i class="fas fa-quote-right"></i>
+                    <p>"التعامل راقي جداً والأسعار مناسبة مقارنة بالسوق. أنصح بالتعامل معهم."</p>
+                    <h4>أبو فيصل - الملقا</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -251,7 +354,10 @@
                 <a href="#"><i class="fab fa-tiktok"></i></a>
                 <a href="https://wa.me/966556532895"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <p>جميع الحقوق محفوظة &copy; 2025 مؤسسة أبو عزيزة لتنسيق الحدائق.</p>
+            <p>جميع الحقوق محفوظة &copy; 2025 مؤسسة إنجاز لتنسيق الحدائق.</p>
+            <p>Design and programming by<a
+                    href="https://www.facebook.com/profile.php?id=100090592885243&mibextid=ZbWKwL"
+                    target="_blank"><strong style="color: aliceblue;">GMTWEB</strong> </a> </p>
         </div>
     </footer>
 
@@ -268,20 +374,20 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-  <script>
-    AOS.init({
-        // 1. الإعدادات العامة
-        duration: 1000,    // مدة الحركة (ثانية واحدة) عشان تكون ناعمة
-        easing: 'ease-in-out', // نوع الحركة
-        once: false,       // false = الحركة تتكرر كل ما تطلعي وتنزلي (زي ما طلبتي)
-        mirror: true,      // true = الحركة تشتغل وانتي طالعة لفوق كمان
-        
-        // 2. حل مشاكل الموبايل
-        offset: 50,        // يبدأ الحركة بدري شوية عشان العنصر مايختفيش فجأة
-        delay: 0,          // بدون تأخير
-        anchorPlacement: 'top-bottom', // يبدأ لما الجزء العلوي من العنصر يلمس أسفل الشاشة
-    });
-</script>
+    <script>
+        AOS.init({
+            // 1. الإعدادات العامة
+            duration: 1000,    // مدة الحركة (ثانية واحدة) عشان تكون ناعمة
+            easing: 'ease-in-out', // نوع الحركة
+            once: false,       // false = الحركة تتكرر كل ما تطلعي وتنزلي (زي ما طلبتي)
+            mirror: true,      // true = الحركة تشتغل وانتي طالعة لفوق كمان
+
+            // 2. حل مشاكل الموبايل
+            offset: 50,        // يبدأ الحركة بدري شوية عشان العنصر مايختفيش فجأة
+            delay: 0,          // بدون تأخير
+            anchorPlacement: 'top-bottom', // يبدأ لما الجزء العلوي من العنصر يلمس أسفل الشاشة
+        });
+    </script>
 </body>
 
 </html>
