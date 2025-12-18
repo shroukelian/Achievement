@@ -1,0 +1,429 @@
+/* Variables */
+:root {
+    --primary-color: #66bb6a; /* أخضر اللوجو الفاتح */
+    --dark-green: #2e7d32;    /* أخضر غامق للتباين */
+    --accent-color: #795548;  /* بني خشبي */
+    --text-dark: #333;
+    --text-light: #666;
+    --bg-light: #f4f9f4;      /* خلفية فاتحة جداً */
+    --white: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+a { text-decoration: none; }
+ul { list-style: none; }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding { padding: 80px 0; }
+.bg-light { background-color: var(--bg-light); }
+.text-center { text-align: center; }
+.mt-20 { margin-top: 20px; }
+.w-100 { width: 100%; }
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-header h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.line {
+    width: 80px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    display: inline-block;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+}
+.btn.primary {
+    background: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(102, 187, 106, 0.4);
+}
+.btn.primary:hover {
+    background: var(--dark-green);
+    transform: translateY(-3px);
+}
+.btn.secondary {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    margin-right: 10px;
+}
+.btn.secondary:hover {
+    background: var(--white);
+    color: var(--dark-green);
+}
+.btn.instagram-btn {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    backdrop-filter: blur(10px);
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--dark-green);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.logo img { height: 50px; }
+
+.nav-links { display: flex; gap: 25px; align-items: center; }
+.nav-links a {
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: 0.3s;
+}
+.nav-links a:hover { color: var(--primary-color); }
+.btn-nav {
+    background: var(--primary-color);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+.menu-toggle { display: none; font-size: 1.5rem; cursor: pointer; color: var(--primary-color); }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('images/ChatGPT\ Image\ 18\ ديسمبر\ 2025،\ 12_56_50\ م.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.hero .overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* تعتيم للصورة */
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+}
+.hero-content h1 { font-size: 3.5rem; font-weight: 900; margin-bottom: 10px; }
+.hero-content h2 { font-size: 2rem; margin-bottom: 20px; color: var(--primary-color); }
+.hero-content p { font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+/* About Section */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.about-img img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 0px var(--primary-color); /* تأثير الظل الملون */
+}
+.features-list { margin-top: 20px; }
+.features-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+.features-list i { color: var(--primary-color); }
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+.service-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.4s;
+    border-bottom: 4px solid transparent;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 4px solid var(--primary-color);
+}
+.service-card .icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+.service-card:hover .icon { transform: rotateY(180deg); }
+.service-card h4 { font-size: 1.4rem; margin-bottom: 10px; }
+
+/* Video Gallery (Reels Style) */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+.video-item {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    aspect-ratio: 9 / 16; /* نسبة الفيديوهات الرأسية (Reels) */
+    background: #000;
+}
+.video-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 60px 0;
+    background: url('https://source.unsplash.com/1600x600/?grass,texture') fixed center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.stats-section .overlay {
+    background: rgba(46, 125, 50, 0.85);
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+.stats-grid {
+    position: relative; z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.stat-box i { font-size: 3rem; margin-bottom: 10px; }
+.stat-box h3 { font-size: 2.5rem; font-weight: 800; }
+
+/* Contact Section */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.info-item i {
+    width: 50px; height: 50px;
+    background: var(--bg-light);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: #888;
+    text-align: center;
+    padding: 30px 0;
+}
+.social-links { margin-bottom: 15px; }
+.social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.social-links a:hover { color: var(--primary-color); }
+
+/* Floating Buttons */
+.floating-actions {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.float-btn {
+    width: 55px; height: 55px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+.float-btn:hover { transform: scale(1.1); }
+.float-btn.whatsapp { background-color: #25d366; }
+.float-btn.phone { background-color: var(--primary-color); }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-toggle { display: block; font-size: 1.5rem; cursor: pointer; color: var(--primary-color); }
+    .nav-links {
+        position: absolute; top: 70px; right: 0; width: 100%;
+        background: var(--white);
+        flex-direction: column;
+        padding: 20px;
+        display: none;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    .nav-links.active { display: flex; }
+    .hero-content h1 { font-size: 2.2rem; }
+    .about-grid, .contact-wrapper, .stats-grid { grid-template-columns: 1fr; }
+    .about-img { order: -1; margin-bottom: 20px; }
+    .float-btn { width: 45px; height: 45px; font-size: 20px; }
+}
+/* --- تعديل اللوجو واسم الشركة --- */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* مسافة بين الصورة والاسم */
+    text-decoration: none;
+}
+
+.logo img {
+    height: 85px; /* تكبير اللوجو (كان 50px) */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo span {
+    font-size: 1.8rem; /* حجم خط كبير وواضح */
+    font-weight: 900; /* خط سميك جداً */
+    color: var(--dark-green); /* اللون الأخضر الغامق */
+    line-height: 1; /* لضبط المحاذاة */
+}
+
+/* تأثير بسيط عند وقوف الماوس */
+.logo:hover img {
+    transform: scale(1.1) rotate(-5deg); /* حركة بسيطة للصورة */
+}
+
+/* --- تعديل للموبايل (عشان اللوجو الكبير ما يبوظش الشكل) --- */
+@media (max-width: 768px) {
+    .logo img {
+        height: 60px; /* حجم مناسب للموبايل */
+    }
+    .logo span {
+        font-size: 1.3rem; /* تصغير الخط قليلاً للموبايل */
+    }
+}
+
+/* =========================================
+   PULSE ANIMATION (أنيميشن النبض)
+   ========================================= */
+
+/* 1. تعريف الحركة (تكبير وتصغير مع ظل يتلاشى) */
+@keyframes pulse-green {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(102, 187, 106, 0.7); /* لون الظل أخضر */
+    }
+    70% {
+        transform: scale(1.05); /* تكبير بسيط */
+        box-shadow: 0 0 0 15px rgba(102, 187, 106, 0); /* الظل يكبر ويختفي */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(102, 187, 106, 0);
+    }
+}
+
+/* 2. تطبيق الحركة على زر الواتساب في الهيرو (أول الشاشة) */
+.hero-btns .btn.primary {
+    animation: pulse-green 2s infinite; /* تكرار لا نهائي كل ثانيتين */
+}
+
+/* 3. تطبيق الحركة على زر "اتصل بنا" في القائمة العلوية */
+.btn-nav {
+    animation: pulse-green 2s infinite;
+}
+
+/* 4. تطبيق الحركة على الأزرار العائمة (الهاتف والواتساب أسفل الشاشة) */
+.float-btn {
+    animation: pulse-green 2s infinite;
+}
+
+/* 5. إيقاف النبض عند وقوف الماوس (عشان العميل يعرف يضغط بسهولة) */
+.hero-btns .btn.primary:hover, 
+.btn-nav:hover, 
+.float-btn:hover {
+    animation: none; /* إيقاف الحركة */
+    transform: scale(1.1); /* تكبير ثابت */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* ظل ثابت */
+}
