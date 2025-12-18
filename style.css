@@ -117,12 +117,33 @@ ul { list-style: none; }
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: var(--dark-green);
-    font-weight: 800;
-    font-size: 1.5rem;
+    gap: 15px; /* زيادة المسافة بين الصورة والاسم قليلاً */
+    text-decoration: none;
 }
-.logo img { height: 50px; }
+
+.logo img {
+    height: 70px; /* تكبير اللوجو (كان 50px أو أصغر) */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo span {
+    font-size: 1.8rem; /* تكبير الخط (كان 1.2rem أو 1.5rem) */
+    font-weight: 900; /* خط سميك جداً */
+    color: var(--dark-green);
+    line-height: 1;
+}
+
+/* --- تعديل للموبايل (عشان مايخربش الشكل) --- */
+@media (max-width: 768px) {
+    .logo img {
+        height: 50px; /* حجم مناسب للموبايل (أكبر من السابق قليلاً) */
+    }
+    
+    .logo span {
+        font-size: 1.2rem; /* تكبير الخط في الموبايل بشكل متناسق */
+    }
+}
 
 .nav-links { display: flex; gap: 25px; align-items: center; }
 .nav-links a {
