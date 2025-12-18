@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أبو عزيزة | لتنسيق الحدائق والديكور الخارجي</title>
-    
+
     <!-- خطوط عربية (Cairo) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    
+
     <!-- مكتبة الأيقونات -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- مكتبة الأنيميشن (AOS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Header / Navbar -->
     <nav class="navbar">
         <div class="container">
-           <a href="#" class="logo">
-    <img src="images/logo-removebg-preview (3).png" alt="Abo Aziza Logo">
-    <span>مؤسسة أبو عزيزة</span>
-</a>
+            <!-- 1. اللوجو واسم الشركة -->
+            <a href="#" class="logo">
+                <img src="images/logo-removebg-preview (3).png" alt="Abo Aziza Logo">
+                <span>مؤسسة أبو عزيزة</span>
+            </a>
+
+            <!-- 2. الروابط (بتختفي في الموبايل) -->
             <ul class="nav-links">
                 <li><a href="#home">الرئيسية</a></li>
                 <li><a href="#about">من نحن</a></li>
                 <li><a href="#services">خدماتنا</a></li>
-                <!-- <li><a href="#gallery">معرض الأعمال</a></li> -->
-                <li><a href="#videos">فيديو</a></li>
+                <li><a href="#gallery">أعمالنا</a></li>
                 <li><a href="#contact" class="btn-nav">اتصل بنا</a></li>
             </ul>
-            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+
+            <!-- 3. زر القائمة (بيظهر في الموبايل) -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -49,7 +57,8 @@
                 متخصصون في التصميم الخارجي والمناظر الطبيعية لتقديم رؤية جديدة ومختلفة في عالم الديكور.
             </p>
             <div class="hero-btns" data-aos="zoom-in" data-aos-delay="600">
-                <a href="https://wa.me/966556532895" class="btn primary"><i class="fab fa-whatsapp"></i> تواصل واتساب</a>
+                <a href="https://wa.me/966556532895" class="btn primary"><i class="fab fa-whatsapp"></i> تواصل
+                    واتساب</a>
                 <a href="#services" class="btn secondary">خدماتنا</a>
             </div>
         </div>
@@ -65,7 +74,8 @@
             <div class="about-text" data-aos="fade-right">
                 <h3>من نحن</h3>
                 <h2>رؤية جديدة في عالم الديكور والتصميم</h2>
-                <p>نحن مؤسسة "أبو عزيزة"، متخصصون في تقديم أرقى خدمات اللاندسكيب والتصميم الخارجي في الرياض والمملكة. نتميز بتقديم رؤية مختلفة تجمع بين الجمال الطبيعي والتصميم الحديث.</p>
+                <p>نحن مؤسسة "أبو عزيزة"، متخصصون في تقديم أرقى خدمات اللاندسكيب والتصميم الخارجي في الرياض والمملكة.
+                    نتميز بتقديم رؤية مختلفة تجمع بين الجمال الطبيعي والتصميم الحديث.</p>
                 <ul class="features-list">
                     <li><i class="fas fa-check-circle"></i> تصميم وتنفيذ وإشراف هندسي.</li>
                     <li><i class="fas fa-check-circle"></i> أعلى مستويات الجودة والإحترافية.</li>
@@ -84,7 +94,7 @@
                 <h2>خدماتنا المتكاملة</h2>
                 <div class="line"></div>
             </div>
-            
+
             <div class="services-grid">
                 <!-- خدمة 1 -->
                 <div class="service-card" data-aos="flip-left" data-aos-delay="100">
@@ -134,7 +144,7 @@
                 <h2>فيديوهات من أرض الواقع</h2>
                 <div class="line"></div>
             </div>
-            
+
             <div class="video-grid">
                 <!-- فيديو 1 -->
                 <div class="video-item" data-aos="zoom-in">
@@ -194,7 +204,7 @@
                 <div class="contact-info" data-aos="fade-left">
                     <h2>تواصل معنا الآن</h2>
                     <p>نحن جاهزون لخدمتك في جميع مناطق الرياض (الملقا، اليرموك، وغيرها).</p>
-                    
+
                     <div class="info-item">
                         <i class="fas fa-phone-alt"></i>
                         <div>
@@ -202,7 +212,7 @@
                             <a href="tel:0556532895">0556532895</a>
                         </div>
                     </div>
-                    
+
                     <div class="info-item">
                         <i class="fab fa-whatsapp"></i>
                         <div>
@@ -219,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Simple Form -->
                 <form class="contact-form" data-aos="fade-right">
                     <input type="text" placeholder="الاسم الكريم" required>
@@ -235,7 +245,8 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://www.instagram.com/reel/DSSyKJ-iGNH/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/reel/DSSyKJ-iGNH/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
                 <a href="#"><i class="fab fa-tiktok"></i></a>
                 <a href="https://wa.me/966556532895"><i class="fab fa-whatsapp"></i></a>
@@ -261,4 +272,5 @@
         AOS.init(); // تفعيل الأنيميشن
     </script>
 </body>
+
 </html>

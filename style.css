@@ -427,3 +427,88 @@ footer {
     transform: scale(1.1); /* تكبير ثابت */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* ظل ثابت */
 }
+
+/* --- 1. تنسيق الهيدر الأساسي (Navbar Fixes) --- */
+.navbar {
+    background: #fff; /* خلفية بيضاء صريحة */
+    padding: 10px 0; /* تقليل الارتفاع شوية */
+    position: fixed; /* تثبيت الهيدر */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* رقم عالي جداً عشان يفضل فوق كل حاجة */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* ظل خفيف */
+    height: 70px; /* ارتفاع ثابت */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* تنسيق اللوجو */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px; /* حجم متوسط للوجو */
+    width: auto;
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--dark-green);
+    white-space: nowrap; /* يمنع نزول الاسم سطر تاني */
+}
+
+/* --- 2. إضافة مسافة للجسم عشان الهيدر م يغطيش المحتوى --- */
+body {
+    padding-top: 70px; /* نفس ارتفاع الهيدر بالظبط */
+}
+
+/* --- 3. إصلاحات الموبايل (أهم جزء) --- */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px; /* تصغير الارتفاع في الموبايل */
+        padding: 0;
+    }
+    
+    body {
+        padding-top: 60px; /* تعديل مسافة الجسم للموبايل */
+    }
+
+    .navbar .container {
+        padding: 0 15px; /* مسافة جانبية عشان الكلام ميلزقش في الحافة */
+    }
+
+    .logo img {
+        height: 35px; /* تصغير الصورة في الموبايل */
+    }
+
+    .logo span {
+        font-size: 1rem; /* تصغير الخط في الموبايل */
+    }
+
+    .menu-toggle {
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: var(--dark-green);
+        display: block; /* تأكيد ظهور الزر */
+    }
+    
+    /* تعديل قائمة الروابط في الموبايل */
+    .nav-links {
+        top: 60px; /* تبدأ بعد الهيدر مباشرة */
+    }
+}
